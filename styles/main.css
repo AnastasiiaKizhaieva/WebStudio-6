@@ -445,12 +445,20 @@ ul {
     padding-left: 42px;
 
     outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-img {
     position: absolute;
     top: 50%;
     left: 15px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-comment {
@@ -468,11 +476,12 @@ ul {
 
 textarea {
     resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* textarea:not(:placeholder-shown) {
-    background-color: green;
-} */
 
 textarea:focus {
     border-color: var(--accent-color);
@@ -507,8 +516,7 @@ textarea:focus {
     background-color: var(--accent-color);
     border-radius: 2px;
     border-color: var(--accent-color);
-    background-origin:border-box
-
+    background-origin: border-box;
 }
 
 .policy-img {
@@ -990,6 +998,8 @@ footer .networks-list :not(:last-child) {
     background-color:var(--accent-color);
 }
 
+/* SUBSCRIPTION  */
+
 .subscription {
     display: flex;
 }
@@ -1028,6 +1038,10 @@ footer .networks-list :not(:last-child) {
     color: var(--footer-text-color);
 
     outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscript-input:focus {
